@@ -63,7 +63,12 @@ module.exports = {
       start_url: `/`,
       background_color: `#f5eae6`,
       theme_color: `#f5eae6`,
-      display: `standalone`
+      display: `standalone`,
+      icon_options: {
+        // For all the options available,
+        // please see the section "Additional Resources" below.
+        purpose: `any maskable`,
+      },
     },
 
   }, `gatsby-plugin-offline`
