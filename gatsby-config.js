@@ -20,20 +20,6 @@ module.exports = {
 
 
   plugins: [{
-
-
-    resolve: `gatsby-plugin-manifest`,
-    options: {
-      name: `Just Married  Wedding Service`,
-      short_name: `Just Married`,
-      icon: `src/static/main.png`,
-      start_url: `/`,
-      background_color: `#f5eae6`,
-      theme_color: `#f5eae6`,
-      display: `standalone`
-    },
-
-
     resolve: 'gatsby-plugin-robots-txt',
 
     options: {
@@ -49,6 +35,10 @@ module.exports = {
       }
     },
   },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`, // Needed for dynamic images
+    `gatsby-plugin-react-helmet`, // Needed for SEO,s
   {
     resolve: "gatsby-plugin-anchor-links",
     options: {
@@ -64,10 +54,18 @@ module.exports = {
       accessToken: process.env.CONTENTFUL_API_KEY,
     },
 
-  },
-    `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`, // Needed for dynamic images
-    `gatsby-plugin-react-helmet` // Needed for SEO
+  }, {
+    resolve: `gatsby-plugin-manifest`,
+    options: {
+      name: `Just Married  Wedding Service`,
+      short_name: `Just Married`,
+      icon: `src/images/butterfly.png`,
+      start_url: `/`,
+      background_color: `#f5eae6`,
+      theme_color: `#f5eae6`,
+      display: `standalone`
+    },
+
+  }
   ]
 };
