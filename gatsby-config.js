@@ -59,7 +59,7 @@ module.exports = {
     options: {
       name: `Just Married  Wedding Service`,
       short_name: `Just Married`,
-      icon: `src/images/icon.png`,
+      icon: `src/images/faveicon.ico`,
       start_url: `/`,
       background_color: `#f5eae6`,
       theme_color: `#f5eae6`,
