@@ -7,6 +7,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 
 
+
 export default function Hero({ text, title, height }) {
     return (
         <div className='hero container'>
@@ -17,7 +18,7 @@ export default function Hero({ text, title, height }) {
                 <h2 className='main-title '>{title}</h2>
 
                 {height === 70 && <>
-                    <StaticImage src='../images/butterfly.png' className='hero__img hero__bottom__position hero__position__right' alt='butterfly' placeholder='blurred' />
+                    <StaticImage src='../images/butterfly.png' className='hero__img' alt='butterfly' placeholder='blurred' />
 
                     <div className='hero__cta'>
                         <Link to='/'><BsBookmarkCheck />Contact Us</Link>
