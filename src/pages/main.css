@@ -653,8 +653,8 @@ footer {
     margin-right: 0;
   }
   .about__side__imgs img {
-    width: 250px;
-    height: 250px;
+    width: 250px !important;
+    height: 250px !important;
   }
 
   .about__side__imgs {
