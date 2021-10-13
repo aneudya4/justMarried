@@ -7,7 +7,7 @@ export default function Information() {
     return (
         <Layout>
             <SEO title='Informaciones' />
-            <Hero title='Informaciones Generales' text='Preguntas Frecuentes' height={20} />
+            <Hero title='Informaciones Generales' text='Preguntas Frecuentes' height={30} />
             <section className='information'>
                 <InformationItem question='Que necesito para casarme en NY'>
                     <p>Para poder casarse en la Ciudad de Nueva York usted debe primero obtener una licencia de matrimonios emitida por el City Clerk.

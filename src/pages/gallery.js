@@ -9,7 +9,7 @@ export default function Gallery({ data: { events: { nodes } } }) {
     <Layout>
       <SEO title='Galleria' />
 
-      <Hero title='See our past ceremonies' text='Galeria de eventos' height={20} />
+      <Hero title='See our past ceremonies' text='Galeria de eventos' height={30} />
       <section className='gallery container'>
         <div className='gallery__imgs'>
 
