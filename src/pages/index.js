@@ -14,9 +14,7 @@ export default function Home() {
       <About />
       <Services />
       <Contact />
-      {/* <About />
-      <Services />
-      <Contact /> */}
+
     </Layout>
   )
 }
