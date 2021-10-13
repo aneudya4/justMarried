@@ -20,20 +20,20 @@ module.exports = {
 
 
   plugins: [{
-    resolve: 'gatsby-plugin-robots-txt',
+
 
     resolve: `gatsby-plugin-manifest`,
-
     options: {
-      name: `Just Married Wedding Services`,
-      short_name: `Just Married`,
+      name: `Fidalgo | Front-end Developer`,
+      short_name: `Fidalgo`,
+      icon: `src/images/icon.png`,
       start_url: `/`,
-      background_color: `#f5eae6`,
-      theme_color: `#f5eae6`,
-      display: `standalone`,
-      icon: `/main.png`, // This path is relative to the root of the site.
+      background_color: `#212121`,
+      theme_color: `#127EB1`,
+      display: `minimal-ui`
     },
 
+    resolve: 'gatsby-plugin-robots-txt',
 
     options: {
       host: 'https://demo-justmarried.netlify.app',
