@@ -18,8 +18,23 @@ module.exports = {
     image: `/main.png`
   },
 
+
   plugins: [{
     resolve: 'gatsby-plugin-robots-txt',
+
+    resolve: `gatsby-plugin-manifest`,
+
+    options: {
+      name: `Just Married Wedding Services`,
+      short_name: `Just Married`,
+      start_url: `/`,
+      background_color: `#f5eae6`,
+      theme_color: `#f5eae6`,
+      display: `standalone`,
+      icon: `src/static/favicon.ico`, // This path is relative to the root of the site.
+    },
+
+
     options: {
       host: 'https://demo-justmarried.netlify.app',
       sitemap: '',
@@ -47,6 +62,7 @@ module.exports = {
       // Learn about environment variables: https://gatsby.dev/env-vars
       accessToken: process.env.CONTENTFUL_API_KEY,
     },
+
   },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,

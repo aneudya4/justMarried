@@ -12,7 +12,8 @@ export default function Services() {
 
         <div className='services__item'>
           <div className='services__item-image'>
-            <StaticImage src='../images/ceremonies/service-anillos.jpeg' alt='anillos' placeholder='blurred' />
+            <StaticImage src='../images/ceremonies/service-anillos.jpeg' alt='anillos' placeholder='blurred' width={350}
+              height={240} />
           </div>
           <div className='services__item-content'>
             <h3 className='services__item-title'>Ceremonia de  los Anillos</h3>
@@ -27,7 +28,8 @@ export default function Services() {
         <div className='services__item'>
           <div className='services__item-image'>
 
-            <StaticImage src='../images/ceremonies/service-arras.jpeg' alt='arras' placeholder='blurred' />
+            <StaticImage src='../images/ceremonies/service-arras.jpeg' alt='arras' placeholder='blurred' width={350}
+              height={240} />
 
           </div>
           <div className='services__item-content'>
@@ -42,7 +44,8 @@ export default function Services() {
 
         <div className='services__item'>
           <div className='services__item-image'>
-            <StaticImage src='../images/ceremonies/service-lazos.jpeg' alt='lazos' placeholder='blurred' />
+            <StaticImage src='../images/ceremonies/service-lazos.jpeg' alt='lazos' placeholder='blurred' width={350}
+              height={240} />
 
           </div>
           <div className='services__item-content'>
@@ -58,7 +61,8 @@ export default function Services() {
 
         <div className='services__item'>
           <div className='services__item-image'>
-            <StaticImage src='../images/ceremonies/service-luz.jpeg' alt='arras' placeholder='blurred' />
+            <StaticImage src='../images/ceremonies/service-luz.jpeg' alt='arras' placeholder='blurred' width={350}
+              height={240} />
 
           </div>
           <div className='services__item-content'>
@@ -75,7 +79,8 @@ export default function Services() {
         <div className='services__item'>
           <div className='services__item-image'>
 
-            <StaticImage src='../images/ceremonies/service-arena.jpeg' alt='arras' placeholder='blurred' />
+            <StaticImage src='../images/ceremonies/service-arena.jpeg' alt='arras' placeholder='blurred' width={350}
+              height={240} />
 
             {/* <img src={arena} /> */}
           </div>
@@ -92,10 +97,11 @@ export default function Services() {
 
         <div className='services__item'>
           <div className='services__item-image'>
-            <StaticImage src='../images/ceremonies/service-vows.jpg' alt='arras' placeholder='blurred' />
+            <StaticImage src='../images/ceremonies/service-vows.jpg' alt='arras' placeholder='blurred' width={350}
+              height={240} />
           </div>
           <div className='services__item-content'>
-            <h3 className='services__item-title'>Ceremonia de renovacion de</h3>
+            <h3 className='services__item-title'>Renovacion de votos</h3>
             <p className='services__item-description'>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,

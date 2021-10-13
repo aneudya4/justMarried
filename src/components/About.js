@@ -16,8 +16,10 @@ export default function About() {
                     </div>
                     <div className='about__side__imgs flex-container'>
                         {/* <img src={lis} alt='about' /> */}
-                        <StaticImage src='../images/lis-people.jpeg' alt='wedding' placeholder='blurred' />
-                        <StaticImage src='../images/service-1.jpg' alt='wedding' placeholder='blurred' />
+                        <StaticImage src='../images/lis-people.jpeg' alt='wedding' placeholder='blurred'
+                        />
+                        <StaticImage src='../images/service-1.jpg' alt='wedding' placeholder='blurred'
+                        />
 
 
                     </div>

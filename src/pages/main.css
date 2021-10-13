@@ -512,10 +512,6 @@ footer {
 }
 
 .gallery__imgs {
-  /* flex-wrap: wrap;
-  justify-content: space-between; */
-  /* max-width: 1200px;
-  margin: 0 auto; */
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 25px;
@@ -523,7 +519,6 @@ footer {
 
 .gallery__img {
   /* flex-basis: 300px; */
-
   /* width: 300px; */
   -webkit-box-shadow: -1px 5px 12px 4px rgba(170, 170, 170, 0.355);
   box-shadow: -1px 5px 12px 4px rgba(170, 170, 170, 0.355);
@@ -531,7 +526,7 @@ footer {
 
 .gallery__img img {
   border-radius: 0.3rem;
-  width: 100%;
+  width: 100% !important;
   height: auto;
 }
 

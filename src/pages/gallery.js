@@ -18,10 +18,6 @@ export default function Gallery({ data: { events: { nodes } } }) {
             )
           }))}
 
-
-
-
-
         </div>
       </section>
     </Layout>
@@ -29,16 +25,21 @@ export default function Gallery({ data: { events: { nodes } } }) {
 }
 
 export const query = graphql`
-  {
-    events: allContentfulEventsInfo {
-      nodes {
-        id
-        clientsPicture {
-          gatsbyImageData(layout: CONSTRAINED,placeholder: TRACED_SVG)
-        }
-        clients
-        eventDate
+{
+ events: allContentfulEventsInfo(sort: {fields: contentful_id, order: DESC}) {
+    nodes {
+      id
+      clientsPicture {
+        gatsbyImageData(
+          layout: CONSTRAINED
+          width: 300
+          placeholder: BLURRED
+          resizingBehavior: NO_CHANGE
+        )
       }
+      clients
+      eventDate
     }
   }
+}
 `
