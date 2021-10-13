@@ -33,6 +33,7 @@ module.exports = {
       display: `standalone`
     },
 
+
     resolve: 'gatsby-plugin-robots-txt',
 
     options: {
@@ -46,7 +47,7 @@ module.exports = {
           policy: [{ userAgent: '*', allow: '/' }]
         }
       }
-    }
+    },
   },
   {
     resolve: "gatsby-plugin-anchor-links",
