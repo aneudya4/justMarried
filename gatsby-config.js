@@ -31,7 +31,7 @@ module.exports = {
       background_color: `#f5eae6`,
       theme_color: `#f5eae6`,
       display: `standalone`,
-      icon: `src/static/favicon.ico`, // This path is relative to the root of the site.
+      icon: `/favicon.ico`, // This path is relative to the root of the site.
     },
 
 
