@@ -24,13 +24,13 @@ module.exports = {
 
     resolve: `gatsby-plugin-manifest`,
     options: {
-      name: `Fidalgo | Front-end Developer`,
-      short_name: `Fidalgo`,
-      icon: `src/images/icon.png`,
+      name: `Just Married  Wedding Service`,
+      short_name: `Just Married`,
+      icon: `src/static/main.png`,
       start_url: `/`,
-      background_color: `#212121`,
-      theme_color: `#127EB1`,
-      display: `minimal-ui`
+      background_color: `#f5eae6`,
+      theme_color: `#f5eae6`,
+      display: `standalone`
     },
 
     resolve: 'gatsby-plugin-robots-txt',
