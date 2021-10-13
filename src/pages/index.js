@@ -5,7 +5,7 @@ import About from "../components/About"
 import Services from '../components/Services'
 import Contact from '../components/Contact'
 import Hero from '../components/Hero'
-import './main.css'
+// import './main.css'
 export default function Home() {
   return (
     <Layout>
