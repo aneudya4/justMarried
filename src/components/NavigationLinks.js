@@ -14,7 +14,6 @@ export default function NavigationLinks() {
             <li><Link activeClassName="active__link" to='/gallery'>Galeria</Link></li>
 
             <li><Link activeClassName="active__link" to='/information'>Preguntas Frecuentes</Link></li>
-            <li><Link activeClassName="active__link" to='/blog'>Blog</Link></li>
 
 
             <li>
