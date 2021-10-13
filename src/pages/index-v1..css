@@ -1,0 +1,745 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&family=Raleway:wght@100;300;400&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+main {
+    /* background-color: #F5EAE6; */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+    color:white;
+}
+
+.cursive-font {
+    font-family: 'Niconne', cursive;
+}
+
+header {
+    width: 100%;    
+    background-image: url('../images/wedding-5.jpg');
+    /* background-attachment: fixed; */
+    min-height: 500px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 60vh;
+    position: relative;
+ 
+}
+
+header::before {
+    content: '';
+    height: 60vh;
+    width: 100%;    
+    /* background-color: #56111161;   */
+    background-color: #56111142;  
+    position: absolute;
+}
+
+
+header .navigation {
+    display: flex;
+    max-width: 1600px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    padding:1rem;
+    color:white;
+    position: relative;
+    z-index: 10;
+}
+
+.navigation h1 {
+    font-size: 5rem;
+    font-weight: 200;
+    
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    padding:1rem;
+    font-size: 1.5rem;
+
+}
+
+
+.navigation ul li:not(:last-of-type) {
+    border-right: 1px solid white;
+    padding:  0  1.5rem;
+}
+
+.navigation ul li:last-of-type {
+    padding-left: 1.5rem;
+}
+
+.active__link {
+    padding:5px;
+    display:inline-block;
+    border-bottom: 1px solid white;
+    
+}
+
+.header__info {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+    color: white;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.header__info  p {
+    font-size: 2rem;
+}
+
+.header__info  h2 {
+    font-size: 7rem;
+    font-weight: 200;
+    line-height: .9;
+}
+
+
+.about {
+    padding:2rem 2rem 4rem 2rem;
+}
+
+.about__info {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.about h3 {
+    text-align: center;
+    font-size:6rem;
+    color:#d41270; 
+}
+
+.about__details h4 {
+    font-size:5rem;
+    font-weight: 200;
+    margin-bottom:2rem;
+}
+.about__details {
+    margin-right: 1rem;
+    background-image: url('../images/flower.webp');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.about__details p{
+    max-width: 650px;
+    margin: 0 auto 2rem auto;
+    font-size: 1.6rem;
+    letter-spacing: 0.7px;
+    
+}
+
+.about__img {
+    height: 400px;
+    width: 300px ;
+    transform: skew(-10deg);
+    -webkit-box-shadow: -7px 12px 0px 2px #cecece7a; 
+    box-shadow: -7px 12px 0px 2px #cececea0;
+}
+
+.about__img img {
+    vertical-align: center;
+    object-fit:cover;
+    /* object-position:40% 90%; */
+}
+
+.services {
+    max-width: 1600px;
+    margin: 0 auto 0 auto;
+    padding:2rem 2rem 4rem 2rem;
+
+}
+
+.services h3 {
+    text-align: center;
+    font-size:6rem;
+    color:#d41270; 
+    margin-bottom:2rem;
+    font-weight: 200;
+
+}
+
+.services__details {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service__card {
+    width: 300px;
+    /* border:1px solid #d41270; */
+}
+
+.card__head {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+}
+
+.card__img {
+    height:80px;
+    width: 80px;
+
+}
+
+.card__img img {
+    vertical-align: center;
+    border-radius: 0 50% 50% 50%;
+    object-fit:cover;
+    object-position:50% 90%;
+}
+.service__title {
+    margin-right: auto;
+    margin-left: 3rem;
+}
+
+.service__title h3 {
+    font-size: 3rem;
+    color:black;
+    font-weight: bold;
+
+}
+
+.service__title svg {
+    font-size: 2rem;
+    color:#d41270;
+}
+.service__details {
+    margin-top:1rem
+}
+
+.service__details p {
+    font-size: 1.5rem;
+}
+
+
+.mid__banner {
+    background:linear-gradient( rgba(233, 11, 122, 0.7) 100%, rgba(137, 4, 79, 0.8)100%),url("../images/wed.jpg");
+    height:140px;
+    background-position:80% 20%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: relative;
+}
+
+.mid__banner__info {
+    color:white;
+    font-size:2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    text-align: center;
+    align-items: center;
+}
+
+.mid__banner__info svg {
+    font-size: 10rem;
+    position: relative;
+    /* top: 1.6rem; */
+    /* left:22.5%; */
+}
+
+
+.reviews {
+    background:linear-gradient( rgba(233, 11, 122, 0.7) 100%, rgba(137, 4, 79, 0.8)100%),url("../images/bg.jpg");
+    min-height:440px;
+    height:auto;
+    background-position:80% 20%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-attachment: fixed; */
+
+}
+
+
+.reviews__cards {
+    height:auto;
+    max-width: 1600px;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.reviews__details  h3 {
+    font-size: 4rem;
+    text-align: center;
+    margin:0 auto 4rem auto;
+    max-width:500px;
+}
+
+.review__card {
+    display: flex;
+    width:40%;
+    min-width: 400px;
+}
+
+
+.review__img {
+    height:152px;
+    min-width: 152px;
+    background:white;
+    padding:0.5rem;
+    position:relative;
+
+
+}
+.review__img::before{
+    content: '';
+    height:152px;
+    min-width:152px;
+    position: absolute;
+    background-color: white;
+    transform: rotate(-8deg);
+    top:-3px;
+    left:-1px;
+
+}
+
+.review__img img {
+    vertical-align: center;
+    object-fit:cover;
+    object-position:50% 90%;
+    position:relative;
+}
+.review__client {
+    margin-left:2rem;
+    color:white;
+    display: flex;
+    flex-direction: column;
+}
+
+.review__client h4 {
+    font-size: 3rem;
+}
+
+.review__client p {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+
+}
+
+.contact__us {
+    max-width: 1600px;
+    margin:0 auto;
+    position:relative;
+    padding:2rem;
+
+}
+
+
+.contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width:800px;
+    height:500px;
+    margin:0 auto;
+    /* padding: 0  7rem; */
+    background:white;
+
+}
+
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:#d41270;
+    width:400px;
+    position:absolute;
+    top:120px;
+    color:white;
+    left:360px;
+    padding:2rem 2rem 3rem 2rem ;
+    -webkit-box-shadow: 5px 1px 18px 2px rgba(0,0,0,0.29); 
+    box-shadow: 5px 1px 18px 2px rgba(0,0,0,0.29);
+}
+
+
+.contact__info h3 {
+    font-size: 4rem;
+    margin-bottom:2rem;
+}
+
+.contact__info ul {
+    font-size: 1.7rem;
+}
+.contact__info ul li:not(:last-of-type) {
+    margin-bottom:2rem;
+}
+
+.contact__info ul li a {
+    display: inline-block;
+    margin-left:1rem;
+    color:white;
+}
+
+
+
+.contact__form {
+    height:300px;
+    margin-right:4rem
+}
+
+.contact__form h3  {
+    font-size: 4rem;
+    color:#d41270;
+    margin-bottom:1rem;
+
+}
+.contact__form p {
+    font-size: 1.5rem;
+    margin-bottom:1rem;
+}
+
+.contact__form form input {
+    display: block;
+    width: 350px;
+    margin-bottom: 1rem;
+    background: rgba(202, 202, 202, 0.478);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding:1rem;
+
+}
+
+
+.contact__form form  button{
+    padding:10px 15px;
+    border:0;
+    color:white;
+    background:#d41270;
+    border-radius:5px;
+}
+.contact__social svg {
+ margin: 2rem 2rem 0 2rem;
+ font-size: 2rem;
+}
+
+
+/* vs */
+
+
+main {
+    background-color: #F5EAE6;
+    background: #F9EEEA
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: white;
+}
+
+.cursive-font {
+    font-family: 'Niconne', cursive;
+}
+
+
+.navigation {
+    max-width: 1600px;
+    margin: 0 auto;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.navigation h1 {
+    font-size: 3em;
+    font-weight: 100;
+}
+
+
+.navigation ul {
+    display: flex;
+    font-size: 1.8em;
+    justify-content: center;
+    list-style: none;
+
+}
+
+
+.navigation ul li:not(:last-of-type) {
+    margin-right: 6rem;
+    /* border-right: 1px solid white;
+    padding-right: 1rem; */
+}
+
+.hero {
+    background-image: url('../images/wedding-5.jpg');
+    height: 60vh;
+    width: 100%;
+    min-height: 500px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.hero::before {
+    content: '';
+    height: 60vh;
+    width: 100%;
+    /* background-color: #56111161;   */
+    background-color: #56111142;
+    position: absolute;
+}
+
+
+.hero__info {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+}
+
+.hero__info p {
+    font-size: 3em;
+
+}
+
+.hero__info h2 {
+    font-weight: 100;
+    font-size: 6em;
+}
+
+
+.about__details {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 4rem;
+
+}
+
+.about__details h2 {
+    font-size: 5em;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    color: black;
+    font-size: 1.7em;
+    font-weight: bold;
+    display: block;
+    border: 2px solid black;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.about__info {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+
+}
+
+.about__text {
+    width: 50%;
+    background-image: url('../images/wine.svg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 300px 200px;
+}
+
+.about__text h3 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.about__text p {
+    padding: 0 3rem;
+}
+
+.about__text p:not(last-of-type) {
+    margin-bottom: 2rem;
+    font-size: 1.6em;
+    /* width:80%; */
+
+}
+
+.about__img {
+    width: 580px;
+    height: 300px;
+
+}
+
+.about__img img {
+    vertical-align: center;
+    object-fit: cover;
+    object-position: 40% 27%;
+}
+
+.about__img__clients {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    margin: 2rem auto 0 auto;
+}
+
+
+.about__img__clients div:last-of-type {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+}
+
+.services::before {
+    content: '';
+    display: inline-block;
+    width: 1200px;
+    height: 1px;
+    background-color: #56111142;
+    margin: 0 auto;
+}
+
+
+.services__details {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 4rem;
+    /* border-top: 2px solid white; */
+}
+
+.services__list {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    flex-wrap: wrap;
+}
+
+.service__info {
+    /* margin:0 auto; */
+    width: 40%;
+}
+
+.service__info p {
+    font-size: 1.6em;
+    /* max-width: 80%; */
+}
+
+.service__info {
+    width: 50%;
+    display:flex;
+    flex-direction:column;
+
+    /* margin-left: auto; */
+}
+
+.services__list {
+    width: 1200px;
+
+    /* margin:0 auto; */
+}
+
+.services__list h2 {
+    font-size: 3em;
+    text-align: left;
+    margin-bottom: 2rem;
+
+}
+
+.services__list ul {
+    font-size: 1.6em;
+    padding: 0 4rem;
+    background-image: url('../images/boda-2.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 200px 100px;
+}
+
+.services__list ul li {
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+}
+
+.services__list p {
+    padding: 0 3rem;
+    margin: 1rem 0;
+
+
+}
+
+.service__img {
+    width: 580px;
+    height: 300px;
+    /* margin-left: auto; */
+}
+
+.services__list a.btn {
+    font-size: 1.3em;
+    margin-top:auto
+}
