@@ -20,7 +20,7 @@ export default function Navigation() {
                 <ul>
                     <li><a href='https://www.instagram.com/' target='_blank' rel="noreferrer"><FaInstagram aria-label="Instagram" /></a></li>
                     <li> <a href='https://www.facebook.com/' target='_blank' rel="noreferrer"><AiOutlineFacebook aria-label="Facebook" /></a></li>
-                    <li><a href='href="https://api.whatsapp.com/send?phone=15551234567"' rel="noreferrer" target='_blank'><FaWhatsapp aria-label="whats-app" /></a>
+                    <li><a href='whatsapp://send?text=Necesito informacion&phone=+10000000000' rel="noreferrer" target='_blank'><FaWhatsapp aria-label="whats-app" /></a>
                     </li>
                 </ul>
             </div>

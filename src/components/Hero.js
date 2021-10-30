@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { BsBookmarkCheck } from "react-icons/bs";
 import { StaticImage } from 'gatsby-plugin-image'
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 
 
@@ -22,7 +23,7 @@ export default function Hero({ text, title, height }) {
                         <StaticImage src='../images/butterfly.png' alt='butterfly' placeholder='blurred' />
                     </div>
                     <div className='hero__cta'>
-                        <Link to='/'><BsBookmarkCheck />Contact Us</Link>
+                        <AnchorLink to='/#contact'><BsBookmarkCheck />Contact Us</AnchorLink>
                     </div>
                 </>}
 
