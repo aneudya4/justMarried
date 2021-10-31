@@ -10,7 +10,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "Just Married",
-    description: "Just Married servicios para bodas en todo NY",
+    description: "Just Married oficiante de bodas en todo New York",
     author: "@AneudyA4",
     titleTemplate: "%s | Just Married",
     url: "https://demo-justmarried.netlify.app",
@@ -49,7 +49,7 @@ module.exports = {
   {
     resolve: `gatsby-source-contentful`,
     options: {
-      spaceId: `hvuvunxxnk3l`,
+      spaceId: `57uzuhp84xhf`,
       // Learn about environment variables: https://gatsby.dev/env-vars
       accessToken: process.env.CONTENTFUL_API_KEY,
     },

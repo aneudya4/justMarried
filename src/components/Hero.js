@@ -23,7 +23,7 @@ export default function Hero({ text, title, height }) {
                         <StaticImage src='../images/butterfly.png' alt='butterfly' placeholder='blurred' />
                     </div>
                     <div className='hero__cta'>
-                        <AnchorLink to='/#contact'><BsBookmarkCheck />Contact Us</AnchorLink>
+                        <AnchorLink to='/#contact'><BsBookmarkCheck />Contactanos</AnchorLink>
                     </div>
                 </>}
 

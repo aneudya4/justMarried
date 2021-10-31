@@ -9,12 +9,11 @@ export default function Footer() {
             <div className='footer__details flex-container'>
                 <div className='footer__details__item'>
                     <h3>Sobre Nosotros</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adip
-                        Lorem ipsum dolor sit amet, consectetur adip
-                        Lorem ipsum dolor sit amet, consectetur adip
-                        Lorem ipsum dolor sit amet, consectetur adip
-                        Lorem ipsum dolor sit amet, consectetur adip
-                        Lorem ipsum dolor sit amet, consectetur adip
+                    <p>
+                        Somos un grupo de oficiantes de matrimonio certificados y registrados por la ciudad de Nueva York
+                        y es un honor poderte asesorar y a la vez acompañarte en este proceso tan memorable. Podemos celebrar
+                        ceremonias civiles en Persona o Virtuales. También orientamos
+                        para poder conseguir la licencia de matrimonios en la Ciudad de Nueva York por Proyecto Cupido.
                     </p>
                 </div>
                 <div className='footer__details__item'>

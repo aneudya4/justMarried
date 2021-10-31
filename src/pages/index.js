@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <Layout>
       <SEO title='Home' />
-      <Hero text='Best Wedding Service Ever!!' title='All you need for your Wedding' />
+      <Hero text='El mejor servicio de bodas!' title='Todo lo que necesitas para tu boda.' />
       <About />
       <Services />
       <Contact />
