@@ -7,8 +7,7 @@ export default function Contact() {
         <section className='contact container' id='contact'>
             <div className='contact__form'>
                 <h2 className='main-title'>Contactenos</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Nuestro compromiso es hacer de ese día tan especial un momento inolvidable.  Contáctanos sin ningún compromiso y estaremos complacidos en poderte asistir con nuestros servicios.</p>
                 <form className='flex-container'>
 
                     <input type='text' placeholder='Nombre' />
