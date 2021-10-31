@@ -32,7 +32,8 @@ export const query = graphql`
       clientsPicture {
         gatsbyImageData(
           layout: CONSTRAINED
-          width: 300
+          width: 320
+          height: 320
           placeholder: BLURRED
           resizingBehavior: NO_CHANGE
         )
