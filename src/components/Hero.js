@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import { BsBookmarkCheck } from "react-icons/bs";
 import { StaticImage } from 'gatsby-plugin-image'
 import { AnchorLink } from "gatsby-plugin-anchor-links";

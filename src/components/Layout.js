@@ -15,11 +15,11 @@ export default function Layout({ children }) {
     return (
         <>
             <Header />
-            {/* <Fade > */}
-            <main>
-                {children}
-            </main>
-            {/* </Fade> */}
+            <Fade duration={1800}>
+                <main>
+                    {children}
+                </main>
+            </Fade>
             <Footer />
 
         </>
