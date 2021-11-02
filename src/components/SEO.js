@@ -24,10 +24,12 @@ const SEO = ({ title, description, image, article }) => {
         description: description || defaultDescription,
         image: `${siteUrl}${image || defaultImage}`,
         url: `${siteUrl}${pathname}`,
+        keywords: ['wedding officiants', 'bodas en tu idioma', 'ceremonia para boda', 'oficiante de bodas en New York', 'oficiante de bodas', 'Ceremonias de bodas en New York', 'bodas en New York', 'ceremonia de bodas en New York']
     }
     return (
         <Helmet htmlAttributes={{ lang: 'es' }} title={seo.title} titleTemplate={titleTemplate}>
             <meta name="description" content={seo.description} />
+            <meta name="keywords" content={seo.keywords} />
             <meta name="image" content={seo.image} />
             {seo.url && <meta property="og:url" content={seo.url} />}
             {(article ? true : null) && <meta property="og:type" content="article" />}

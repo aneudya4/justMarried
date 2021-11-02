@@ -15,6 +15,7 @@ module.exports = {
     titleTemplate: "%s | Just Married",
     url: "https://demo-justmarried.netlify.app",
     twitterUsername: "@AneudyA4",
+    siteUrl: "https://demo-justmarried.netlify.app",
     image: `/main.png`
   },
 
@@ -38,7 +39,8 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
-    `gatsby-plugin-react-helmet`, // Needed for SEO,s
+    `gatsby-plugin-react-helmet`, // Needed for SEO,
+    'gatsby-plugin-sitemap',
   {
     resolve: "gatsby-plugin-anchor-links",
     options: {
