@@ -135,6 +135,7 @@ div.show-menu ul.navigation__map {
   border-radius: 0.3rem;
   outline: none;
   cursor: pointer;
+  border: 0;
 }
 
 .btn-primary {
@@ -396,8 +397,13 @@ div.services__more-info p {
   padding: var(--container-padding);
 }
 
+.contact__form-success svg {
+  font-size: 7rem;
+  color: green;
+}
+
 .modal-content {
-  background: white;
+  background: var(--main-bg-color);
   max-width: 450px;
   min-width: 310px;
   height: 300px;
@@ -409,11 +415,10 @@ div.services__more-info p {
   text-align: center;
   margin: 0 auto;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   top: 50%;
   left: 50%;
   border-radius: 1.2rem;
-  overflow: hidden;
 
   transform: translate(-50%, -50%);
 }
@@ -422,21 +427,19 @@ div.services__more-info p {
   padding: 2rem;
 }
 
-.show-modal {
-  overflow: hidden;
-  height: 500vh;
+.show-modal::after {
+  /* height: 10000vh; */
+  height: 100%;
+  z-index: 1;
   width: 100vw;
   background-color: rgba(221, 221, 221, 0.782) !important;
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.modal-content svg {
-  font-size: 7rem;
-  color: green;
+  position: relative;
+  z-index: 1111;
+  top: 0;
+  left: 0;
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
 }
 
 .is-invalid {
@@ -445,11 +448,11 @@ div.services__more-info p {
 
 .error-msg {
   color: red;
-  font-size: 1.2rem;
+  font-size: 2.2rem;
   margin-top: 0.5rem;
 }
-.modal-content .btn {
-  border: 0;
+
+.error-msg svg {
 }
 
 .contact__form {
@@ -674,7 +677,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .spinner svg {
