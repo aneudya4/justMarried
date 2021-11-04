@@ -17,7 +17,7 @@ html {
 
 input,
 textarea {
-  font-size: 16px !important;
+  font-size: 12px !important;
 }
 
 :root {
@@ -422,7 +422,8 @@ div.services__more-info p {
 }
 
 .show-modal {
-  height: 1000vh;
+  overflow: hidden;
+  height: 500vh;
   width: 100vw;
   background-color: rgba(221, 221, 221, 0.782) !important;
   position: absolute;
