@@ -15,6 +15,11 @@ html {
   font-size: 10px;
 }
 
+input,
+textarea {
+  font-size: 16px !important;
+}
+
 :root {
   --main-bg-color: #f5eae6;
   --secondary-bg-color: #a22a36;
