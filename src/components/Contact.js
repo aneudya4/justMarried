@@ -1,5 +1,7 @@
 import React, { useState } from "react"
 import Modal from "../components/Modal"
+import { formatPhoneNumber, encode } from "../utils/utils.js"
+import validator from "validator"
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -22,14 +24,16 @@ export default function Contact() {
 
   const validateForm = () => {
     const { name, message, phone } = formData
+
     const error = {}
+
     if (!name || name.trim() === "") {
       error.name = "Name is required"
     }
     if (!message || message.trim() === "") {
       error.message = "Message is required"
     }
-    if (!phone || phone.trim() === "") {
+    if (!validator.isMobilePhone(phone, "en-US")) {
       error.phone = "Phone is required"
     }
 
@@ -40,16 +44,12 @@ export default function Contact() {
 
   const handleOnChange = e => {
     if (e.target.name === "phone") {
-      setFormData({ ...formData, [e.target.name]: e.target.value.trim() })
+      const formattedPhoneNumber = formatPhoneNumber(e.target.value)
+
+      setFormData({ ...formData, [e.target.name]: formattedPhoneNumber })
       return
     }
     setFormData({ ...formData, [e.target.name]: e.target.value })
-  }
-
-  const encode = data => {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&")
   }
 
   const handleSubmit = async e => {
@@ -94,7 +94,7 @@ export default function Contact() {
 
   return (
     <section className="contact-section">
-      <section className="contact container" id="contact">
+      <div className="contact container" id="contact">
         {showModal && (
           <Modal
             text="Gracias por contactarnos. Nos estaremos comunicando con usted pronto."
@@ -149,11 +149,11 @@ export default function Contact() {
                 onChange={handleOnChange}
                 name="phone"
                 type="tel"
-                placeholder="Telefono: 123-456-7890"
+                placeholder="Telefono"
                 value={formData.phone}
                 className={isInvalid.error.phone && "is-invalid"}
                 required
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                // pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
               />
             </div>
             <input
@@ -179,7 +179,7 @@ export default function Contact() {
             </button>
           </form>
         </div>
-      </section>
+      </div>
     </section>
   )
 }
