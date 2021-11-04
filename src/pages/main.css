@@ -413,6 +413,7 @@ div.services__more-info p {
   top: 50%;
   left: 50%;
   border-radius: 1.2rem;
+  overflow: hidden;
 
   transform: translate(-50%, -50%);
 }
