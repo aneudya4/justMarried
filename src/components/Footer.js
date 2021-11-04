@@ -5,8 +5,8 @@ import { AiOutlineFacebook } from "react-icons/ai"
 
 export default function Footer() {
   return (
-    <footer className="container">
-      <div className="footer__details flex-container">
+    <footer className=" footer-section">
+      <div className=" container footer__details flex-container">
         <div className="footer__details__item">
           <h3>Sobre Nosotros</h3>
           <p>
@@ -78,7 +78,6 @@ export default function Footer() {
       </div>
       <div className="footer__copyright">
         <p>
-          {" "}
           Copyright &copy; {new Date().getFullYear()} Just Married. | Design by
           Aneudy Adames
         </p>

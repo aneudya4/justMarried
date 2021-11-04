@@ -34,6 +34,10 @@ a:active {
   color: black;
 }
 
+main {
+  background-color: var(--main-bg-color);
+}
+
 .main-title {
   font-family: "Niconne", cursive;
   font-size: var(--main-heading-text-size);
@@ -174,20 +178,12 @@ div.show-menu ul.navigation__map {
   width: 100%;
 }
 
-.hero__top__position {
-  top: 0px;
-}
-
 .hero__bottom__position {
-  bottom: -10px;
+  bottom: -40px;
 }
 
 .hero__position__right {
-  right: -40px;
-}
-
-.hero__position__left {
-  left: 5px;
+  right: 0px;
 }
 
 .hero__cta {
@@ -214,14 +210,11 @@ div.show-menu ul.navigation__map {
   display: inline-block;
   margin-right: 0.5rem;
 }
-
+.about-section {
+  background: white;
+}
 .about {
   padding: var(--container-padding);
-}
-
-.about img {
-  -webkit-box-shadow: -1px 5px 12px 4px rgba(170, 170, 170, 0.355);
-  box-shadow: -1px 5px 12px 4px rgba(170, 170, 170, 0.355);
 }
 
 .about__details {
@@ -235,16 +228,14 @@ div.show-menu ul.navigation__map {
 }
 
 .about__main__img {
-  border-radius: 10px;
   box-shadow: 0 0 150px #ddd;
   background: #fff;
   max-width: 630px;
   margin-left: auto;
   margin: 0 auto;
   position: relative;
-}
-
-.about__main__img {
+  -webkit-box-shadow: -1px 5px 12px 4px rgba(170, 170, 170, 0.355);
+  box-shadow: -1px 5px 12px 4px rgba(170, 170, 170, 0.355);
   border-radius: 0.6rem;
 }
 
@@ -281,7 +272,7 @@ div.show-menu ul.navigation__map {
 }
 
 .about__main-title h2 {
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   font-weight: 300;
 }
 .about__side__imgs > * {
@@ -293,7 +284,7 @@ div.show-menu ul.navigation__map {
 }
 
 .about__side__imgs div:last-of-type {
-  margin-top: auto;
+  /* margin-top: auto; */
   min-width: 250px;
   filter: grayscale(100%);
 }
@@ -389,6 +380,10 @@ div.services__more-info p {
   display: inline-block;
   margin-top: 1rem;
   color: white;
+}
+
+.contact-section {
+  background-color: white;
 }
 
 .contact {
@@ -495,11 +490,14 @@ footer {
 .footer__copyright {
   padding: 2rem 0;
   font-size: 1.4rem;
+  text-align: center;
 }
 
 /* GALLERY */
 .gallery {
   padding: var(--container-padding) 0 var(--container-padding) 0;
+  background: white;
+  width: 100%;
 }
 
 .gallery__imgs {
@@ -524,9 +522,13 @@ footer {
 /* FAQ */
 
 .information {
+  padding: var(--container-padding) 0 var(--container-padding) 0;
+  background: white;
+}
+
+.information-container {
   max-width: 850px;
   margin: 0 auto;
-  padding: var(--container-padding) 0 var(--container-padding) 0;
 }
 
 .information .information__item:not(:last-of-type) {
@@ -648,6 +650,10 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     margin-left: 4rem;
+  }
+
+  .about__side__imgs div:first-of-type {
+    margin: 0;
   }
 
   .about__side__imgs div:last-of-type {
@@ -782,6 +788,7 @@ footer {
 .modal-content {
   background: white;
   max-width: 450px;
+  min-width: 310px;
   height: 300px;
   display: flex;
   flex-direction: column;
