@@ -1,24 +1,21 @@
-import React, { useState, useEffect } from 'react'
-import Header from './Header'
+import React, { useState, useEffect } from "react"
+import Header from "./Header"
 import Footer from "../components/Footer"
-import '../pages/main.css'
-import Spinner from '../components/Spinner'
+import "../pages/main.css"
+import Spinner from "../components/Spinner"
 export default function Layout({ children }) {
-    const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true)
 
-    useEffect(() => {
-        setTimeout(() => {
-            setIsLoading(false)
-        }, 1000)
-    }, [isLoading])
-    return (
-        <>
-            <Header />
-            <main>
-                {children}
-            </main>
-            <Footer />
-
-        </>
-    )
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false)
+    }, 1000)
+  }, [isLoading])
+  return (
+    <>
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </>
+  )
 }

@@ -751,3 +751,60 @@ footer {
   stroke-dashoffset: -134;
   stroke-width: 6;
 }
+
+.modal-content {
+  background: white;
+  max-width: 450px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  border-radius: 1.2rem;
+
+  transform: translate(-50%, -50%);
+}
+
+.modal-content p {
+  padding: 2rem;
+}
+
+.show-modal {
+  height: 1000vh;
+  width: 100vw;
+  background-color: rgba(221, 221, 221, 0.782) !important;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section.contact {
+  position: relative;
+}
+
+.modal-content svg {
+  font-size: 7rem;
+  color: green;
+}
+
+.is-invalid {
+  border-color: red !important;
+}
+
+.error-msg {
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+.modal-content .btn {
+  border: 0;
+}
