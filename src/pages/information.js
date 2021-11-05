@@ -14,7 +14,7 @@ export default function Information() {
       />
       <section className="information">
         <div className="information-container">
-          <InformationItem question="Que necesito para casarme en NY" idx={1}>
+          <InformationItem question="Que necesito para casarme en NY">
             <p>
               Para poder casarse en la Ciudad de Nueva York usted debe primero
               obtener una licencia de matrimonios emitida por el City Clerk. Si
@@ -31,7 +31,7 @@ export default function Information() {
               y al menos un testigo presente, todos con su identificación.
             </p>
           </InformationItem>
-          <InformationItem question="Que necesito para casarme en NY" idx={2}>
+          <InformationItem question="Que necesito para casarme en NY">
             <p>
               Para poder casarse en la Ciudad de Nueva York usted debe primero
               obtener una licencia de matrimonios emitida por el City Clerk. Si
@@ -48,7 +48,7 @@ export default function Information() {
               y al menos un testigo presente, todos con su identificación.
             </p>
           </InformationItem>
-          <InformationItem question="Que necesito para casarme en NY" idx={3}>
+          <InformationItem question="Que necesito para casarme en NY">
             <p>
               Para poder casarse en la Ciudad de Nueva York usted debe primero
               obtener una licencia de matrimonios emitida por el City Clerk. Si
@@ -65,7 +65,7 @@ export default function Information() {
               y al menos un testigo presente, todos con su identificación.
             </p>
           </InformationItem>
-          <InformationItem question="Que necesito para casarme en NY" idx={4}>
+          <InformationItem question="Que necesito para casarme en NY">
             <p>
               Para poder casarse en la Ciudad de Nueva York usted debe primero
               obtener una licencia de matrimonios emitida por el City Clerk. Si
@@ -82,7 +82,7 @@ export default function Information() {
               y al menos un testigo presente, todos con su identificación.
             </p>
           </InformationItem>
-          <InformationItem question="Que necesito para casarme en NY" idx={5}>
+          <InformationItem question="Que necesito para casarme en NY">
             <p>
               Para poder casarse en la Ciudad de Nueva York usted debe primero
               obtener una licencia de matrimonios emitida por el City Clerk. Si
@@ -99,7 +99,7 @@ export default function Information() {
               y al menos un testigo presente, todos con su identificación.
             </p>
           </InformationItem>
-          <InformationItem question="Que necesito para casarme en NY" idx={6}>
+          <InformationItem question="Que necesito para casarme en NY">
             <p>
               Para poder casarse en la Ciudad de Nueva York usted debe primero
               obtener una licencia de matrimonios emitida por el City Clerk. Si
@@ -116,7 +116,7 @@ export default function Information() {
               y al menos un testigo presente, todos con su identificación.
             </p>
           </InformationItem>
-          <InformationItem question="Que necesito para casarme en NY" idx={7}>
+          <InformationItem question="Que necesito para casarme en NY">
             <p>
               Para poder casarse en la Ciudad de Nueva York usted debe primero
               obtener una licencia de matrimonios emitida por el City Clerk. Si
@@ -133,7 +133,7 @@ export default function Information() {
               y al menos un testigo presente, todos con su identificación.
             </p>
           </InformationItem>
-          <InformationItem question="Que necesito para casarme en NY" idx={8}>
+          <InformationItem question="Que necesito para casarme en NY">
             <p>
               Para poder casarse en la Ciudad de Nueva York usted debe primero
               obtener una licencia de matrimonios emitida por el City Clerk. Si

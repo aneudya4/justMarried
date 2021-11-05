@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai"
 
-export default function InformationItem({ question, children, idx }) {
+export default function InformationItem({ question, children }) {
   const [show, setShow] = useState(false)
 
   return (
@@ -10,7 +10,7 @@ export default function InformationItem({ question, children, idx }) {
       onClick={() => setShow(!show)}
       onKeyDown={() => setShow(!show)}
       role="button"
-      tabIndex={idx}
+      tabIndex="0"
     >
       <div className="information__icons">
         {show ? (
