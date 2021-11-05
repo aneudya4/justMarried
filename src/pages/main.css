@@ -334,6 +334,7 @@ div.show-menu ul.navigation__map {
 
 .services__item-content p {
   font-size: 1.5rem;
+  text-align: justify;
 }
 
 .services__item-image {
@@ -359,6 +360,7 @@ div.services__more-info {
 div.services__more-info p {
   width: 90%;
   margin: 0 auto;
+  text-align: justify;
 }
 
 .services__price ul {
@@ -520,7 +522,7 @@ footer {
 .footer__details p {
   font-size: 1.3rem;
   max-width: 400px;
-  text-align: center;
+  text-align: justify;
   margin: 0 auto;
 }
 
@@ -733,6 +735,10 @@ footer {
     max-width: 600px;
     margin: 0 auto;
     padding: 4rem;
+  }
+
+  .contact__form p {
+    text-align: justify;
   }
 
   .footer__details {

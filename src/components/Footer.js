@@ -1,4 +1,6 @@
 import React from "react"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
+import { Link } from "gatsby"
 
 import { FaRegEnvelope, FaInstagram, FaWhatsapp } from "react-icons/fa"
 import { AiOutlineFacebook } from "react-icons/ai"
@@ -22,22 +24,31 @@ export default function Footer() {
           <h3>Site map</h3>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link activeClassName="active__link" to="/">
+                Home
+              </Link>
             </li>
             <li>
-              <a href="/">Servicios</a>
+              <AnchorLink to="/#services" title="About us" stripHash>
+                Servicios
+              </AnchorLink>
             </li>
             <li>
-              <a href="/gallery">Galeria</a>
+              <Link activeClassName="active__link" to="/gallery">
+                Galeria
+              </Link>
             </li>
+
             <li>
-              <a href="/">Preguntas Frecuentes</a>
+              <Link activeClassName="active__link" to="/information">
+                Preguntas Frecuentes
+              </Link>
             </li>
+
             <li>
-              <a href="/">Blog</a>
-            </li>
-            <li>
-              <a href="/">Contactos</a>
+              <AnchorLink to="/#contact" title="Contact us" stripHash>
+                Contacto
+              </AnchorLink>
             </li>
           </ul>
         </div>
