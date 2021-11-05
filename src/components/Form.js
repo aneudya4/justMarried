@@ -17,18 +17,22 @@ export default function Form({ handleFormSubmitted }) {
   })
 
   const validateForm = () => {
-    const { name, message, phone } = formData
+    const { name, message, phone, email } = formData
 
     const error = {}
 
     if (!name || name.trim() === "") {
-      error.name = "Name is required"
+      error.name = "Un nombre valido requerido"
     }
+    if (!email || !validator.isEmail(email)) {
+      error.email = "Un Email valido es requerido"
+    }
+
     if (!message || message.trim() === "") {
-      error.message = "Message is required"
+      error.message = "Un mensaje es requeridod"
     }
     if (!validator.isMobilePhone(phone, "en-US")) {
-      error.phone = "Phone is required"
+      error.phone = "Un numero valido es requerido"
     }
 
     setIsInvalid({ error })
@@ -101,9 +105,18 @@ export default function Form({ handleFormSubmitted }) {
             complacidos en poderte asistir con nuestros servicios.
           </p>
           {isFormValid === false && (
-            <p className="error-msg">
-              Por favor completar los campos requeridos
-            </p>
+            <div className="error-msg">
+              <p>Por favor completar los campos requeridos</p>
+
+              {Object.keys(isInvalid.error).length > 0 && (
+                <ul>
+                  <li> {isInvalid.error.name}</li>
+                  <li> {isInvalid.error.phone}</li>
+                  <li> {isInvalid.error.email}</li>
+                  <li> {isInvalid.error.message}</li>
+                </ul>
+              )}
+            </div>
           )}
 
           {!errorSubmitting ? (
@@ -137,7 +150,6 @@ export default function Form({ handleFormSubmitted }) {
                   value={formData.phone}
                   className={isInvalid.error.phone && "is-invalid"}
                   required
-                  // pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
                 />
               </div>
               <input

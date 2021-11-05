@@ -448,11 +448,13 @@ div.services__more-info p {
 
 .error-msg {
   color: red;
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-top: 0.5rem;
 }
 
-.error-msg svg {
+.error-msg ul {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .contact__form {
@@ -614,6 +616,10 @@ footer {
   color: var(--secondary--text-color);
 }
 
+.information__item {
+  cursor: pointer;
+}
+
 .information__item p {
   font-size: 1.4rem;
 }
@@ -626,10 +632,6 @@ footer {
   position: absolute;
   right: 10px;
   font-size: 2rem;
-}
-
-.information__icons svg {
-  cursor: pointer;
 }
 
 .information__footer {
