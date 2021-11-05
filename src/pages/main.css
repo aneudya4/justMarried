@@ -144,7 +144,8 @@ div.show-menu ul.navigation__map {
 }
 
 .btn-primary:hover {
-  background: var(--secondary--text-color--dark);
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
 }
 
 .hero {
@@ -404,46 +405,6 @@ div.services__more-info p {
   color: green;
 }
 
-.modal-content {
-  background: var(--main-bg-color);
-  max-width: 450px;
-  min-width: 310px;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  text-align: center;
-  margin: 0 auto;
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  border-radius: 1.2rem;
-
-  transform: translate(-50%, -50%);
-}
-
-.modal-content p {
-  padding: 2rem;
-}
-
-.show-modal::after {
-  /* height: 10000vh; */
-  height: 100%;
-  z-index: 1;
-  width: 100vw;
-  background-color: rgba(221, 221, 221, 0.782) !important;
-  position: relative;
-  z-index: 1111;
-  top: 0;
-  left: 0;
-  /* top: 50%;
-  left: 50%; */
-  /* transform: translate(-50%, -50%); */
-}
-
 .is-invalid {
   border-color: red !important;
 }
@@ -452,6 +413,10 @@ div.services__more-info p {
   color: red;
   font-size: 2rem;
   margin-top: 0.5rem;
+}
+
+.error-msg > p {
+  text-align: center !important;
 }
 
 .error-msg ul {
@@ -534,6 +499,11 @@ footer {
   padding: 0.3rem 0;
 }
 
+.footer__details ul li:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
 .footer__details div:nth-child(2) {
   display: none;
 }
@@ -554,6 +524,11 @@ footer {
 .footer__details__item .social a {
   display: inline-block;
   margin: 0 0.2rem;
+}
+
+.social svg:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
 }
 
 .footer__copyright {

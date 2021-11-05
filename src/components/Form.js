@@ -21,7 +21,7 @@ export default function Form({ handleFormSubmitted }) {
 
     const error = {}
 
-    if (!name || name.trim() === "") {
+    if (!name || name.trim() === "" || name.trim().length < 3) {
       error.name = "Un nombre valido requerido"
     }
     if (!email || !validator.isEmail(email)) {
@@ -78,7 +78,7 @@ export default function Form({ handleFormSubmitted }) {
       setTimeout(() => {
         handleFormSubmitted(true)
         setIsLoading(false)
-      }, 2000)
+      }, 1500)
     } catch (error) {
       setIsLoading(false)
 

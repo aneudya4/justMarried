@@ -13,7 +13,7 @@ export default function InformationItem({ question, children }) {
           <AiOutlinePlus />
         )}
       </div>
-      <h2 className={`${show ? "information__active" : null}`}>¿{question}?</h2>
+      <h2 className={show && "information__active"}>¿{question}?</h2>
       {show && <>{children}</>}
     </div>
   )
