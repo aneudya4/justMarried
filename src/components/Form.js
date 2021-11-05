@@ -29,7 +29,7 @@ export default function Form({ handleFormSubmitted }) {
     }
 
     if (!message || message.trim() === "") {
-      error.message = "Un mensaje es requeridod"
+      error.message = "Un mensaje es requerido"
     }
     if (!validator.isMobilePhone(phone, "en-US")) {
       error.phone = "Un numero valido es requerido"

@@ -11,8 +11,8 @@ export default function Home() {
     <Layout>
       <SEO title="Home" />
       <Hero
-        text="La Oficiante ideal para tu ceremonia!"
-        title="Just Married servicos para bodas."
+        text="La oficiante ideal para tu ceremonia!"
+        title="Just Married servicios para bodas."
       />
       <About />
       <Services />
