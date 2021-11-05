@@ -96,6 +96,10 @@ div.show-menu ul.navigation__map {
   padding: 0 0.5rem;
 }
 
+.scrollable-nav {
+  display: none;
+}
+
 .navigation ul {
   display: flex;
   align-items: center;
@@ -743,6 +747,28 @@ footer {
   }
   .mobile__menu {
     display: none;
+  }
+
+  .scrollable-nav {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 0;
+    width: 500px;
+    transform: translateX(-50%);
+    background: var(--main-bg-color);
+    border: 1px solid rgba(183, 181, 181, 0.807);
+    border-radius: 0.3rem;
+    opacity: 0.9;
+  }
+
+  .scrollable-nav ul {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    padding: 2rem;
   }
 
   .hero__img {
