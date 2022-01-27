@@ -43,7 +43,7 @@ export default function Form({ handleFormSubmitted }) {
   const handleOnChange = e => {
     if (e.target.name === "phone") {
       const formattedPhoneNumber = formatPhoneNumber(e.target.value)
-
+      console.log(formattedPhoneNumber)
       setFormData({ ...formData, [e.target.name]: formattedPhoneNumber })
       return
     }

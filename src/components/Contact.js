@@ -3,10 +3,10 @@ import Form from "../components/Form"
 import { IoMdCheckmarkCircleOutline } from "react-icons/io"
 
 export default function Contact() {
-  const [isFormSubmitted, setIsformSubmitted] = useState(false)
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false)
 
   const handleFormSubmitted = () => {
-    setIsformSubmitted(true)
+    setIsFormSubmitted(true)
   }
 
   return (
@@ -26,7 +26,7 @@ export default function Contact() {
                 pronto!
               </p>
               <button
-                onClick={() => setIsformSubmitted(false)}
+                onClick={() => setIsFormSubmitted(false)}
                 className="btn btn-primary"
               >
                 Volver al formulario
