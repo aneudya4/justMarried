@@ -1,8 +1,10 @@
 import React from "react"
+import SEO from "../components/SEO"
 
 export default function ComingSoon() {
   return (
     <section className="app">
+      <SEO title="Home | Just-Married | Coming Soon" />
       <div className="content-area d-flex align-items-center justify-content-center">
         <div>
           <h3 className="fade-in two heading-title"> Coming Soon </h3>
