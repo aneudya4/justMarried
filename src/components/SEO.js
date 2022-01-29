@@ -14,6 +14,7 @@ const SEO = ({ title, description, image, article }) => {
     siteUrl,
     defaultImage,
     twitterUsername,
+    author,
   } = site.siteMetadata
 
   const seo = {
@@ -21,6 +22,7 @@ const SEO = ({ title, description, image, article }) => {
     description: description || defaultDescription,
     image: `${siteUrl}${image || defaultImage}`,
     url: `${siteUrl}${pathname}`,
+    author: author,
     keywords: [
       "wedding officiants",
       "Lissette Marte",
@@ -39,6 +41,7 @@ const SEO = ({ title, description, image, article }) => {
       title={seo.title}
       titleTemplate={titleTemplate}
     >
+      <meta name="author" content={seo.author} />
       <meta name="description" content={seo.description} />
       <meta name="keywords" content={seo.keywords} />
       <meta name="image" content={seo.image} />
@@ -84,6 +87,7 @@ const query = graphql`
         siteUrl: url
         defaultImage: image
         twitterUsername
+        author
       }
     }
   }

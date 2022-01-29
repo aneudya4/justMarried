@@ -877,6 +877,10 @@ footer {
   justify-content: center;
 }
 
+.content-area p {
+  font-size: 1.6rem;
+}
+
 /* make keyframes that tell the start state and the end state of our object */
 @-webkit-keyframes fadeIn {
   from {
